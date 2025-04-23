@@ -1,0 +1,125 @@
+.contact-container {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f9fc;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-card {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.contact-form-section,
+.contact-info-section {
+    flex: 1 1 50%;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+
+.contact-form-section {
+    background-color: #f0f4f8;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    resize: vertical;
+    background-color: #fff;
+}
+
+.submit-btn {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Info section styles */
+.contact-info-section {
+    background-color: #fff;
+    border-left: 1px solid #eee;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1rem;
+    flex-shrink: 0;
+}
+
+/* Placeholder icons (you can replace these with actual icons) */
+.phone-icon::before {
+    content: "📞";
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.email-icon::before {
+    content: "✉️";
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.location-icon::before {
+    content: "🌐";
+    font-size: 1.5rem;
+    display: inline-block;
+    line-height: 40px;
+}
+
+.info-content h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+
+.info-content p {
+    margin: 0.2rem 0;
+    color: #555;
+}
+
