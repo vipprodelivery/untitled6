@@ -1,13 +1,25 @@
+/* Base styles */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: Black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.dark {
+    background-color: black;
     color: white;
 }
 
-.nav-logo {
+.navbar .logo {
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -19,11 +31,61 @@
 }
 
 .nav-links a {
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: 500;
 }
 
 .nav-links a:hover {
     border-bottom: 2px solid #00e676;
+}
+
+.search-bar {
+    padding: 0.5rem;
+    margin-left: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    width: 200px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: black;
+}
+
+.dark-mode-btn {
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #00e676;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.dark-mode-btn:hover {
+    background-color: black;
+}
+
+.profile-avatar {
+    margin-left: 1.5rem;
+}
+
+.profile-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar.dark .nav-links a {
+    color: white;
+}
+
+.navbar.dark .search-bar {
+    border: 1px solid #ccc;
+}
+
+.navbar.dark .dark-mode-btn {
+    background-color: #ff7043;
 }
